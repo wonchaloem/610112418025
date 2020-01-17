@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <table>Hello World???</table>
+        <script src="js/jquery-3.4.1.min.js"></script>
+    </head> 
+    <body>
+        <h1>Hello World???</h1>
+
+        <label id="lb1">Mr.wanchaloem</label>
+        <hr>
+        <form id="fm1">
+        <input id="in1" type="number" required>
+        <br>
+        <button type="submit">calculate</button>
+        <br>
+        <label id="lb_result"></label>
+        </form>
+    </body>
+</html>
+<script>
+$(function(){
+    $("#lb1").text("610112418025");
+
+    // $("button").click(function(){
+    //     var value = $("#in1").val();
+    //     var result = value * value;
+    //     $("#lb_result").html(result);
+    // });
+    $("#fm1").submit(function(envent){
+        var value = $("#in1").val();
+        var result = value * value;
+        $("#lb_result").html(result);
+        envent.preventDefault();
+    });
+});// jQuery Handle // ready
+</script>
